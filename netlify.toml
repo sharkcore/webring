@@ -1,0 +1,8 @@
+[build]
+  publish = "dist/"
+  command = "yarn build"
+
+[[headers]]
+  for = "/webring.modern.js"
+    [headers.values]
+    Access-Control-Allow-Origin = "*"
