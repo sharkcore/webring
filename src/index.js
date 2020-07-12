@@ -44,7 +44,7 @@ class SharkcoreWebring extends LitElement {
 
       img {
         width: 80px;
-        height: 80px;
+        height: auto;
       }
     `;
   }
