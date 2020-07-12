@@ -44,7 +44,7 @@ class SharkcoreWebring extends LitElement {
 
       video {
         width: 80px;
-        height: auto;
+        height: 84.8px;
       }
     `;
   }
