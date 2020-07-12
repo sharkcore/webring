@@ -61,7 +61,7 @@ class SharkcoreWebring extends LitElement {
       <table border="1">
         <tr>
           <td>
-            <img src="${sharkGif}" />
+            <img alt="dancing left shark" src="${sharkGif}" />
           </td>
           <td>
             <b>OFFICIAL SITE</b>
@@ -70,7 +70,7 @@ class SharkcoreWebring extends LitElement {
             SHARKCORE Developers Web Ring
           </td>
           <td>
-            <img src="${sharkGif}" />
+            <img alt="dancing right shark" src="${sharkGif}" />
           </td>
         </tr>
         <tr>
