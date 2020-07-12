@@ -42,7 +42,7 @@ class SharkcoreWebring extends LitElement {
         font-weight: bold;
       }
 
-      img {
+      video {
         width: 80px;
         height: auto;
       }
@@ -55,13 +55,15 @@ class SharkcoreWebring extends LitElement {
     const nextHref = sites[(index + 1) % sites.length];
     const prevHref = sites[(index - 1 + sites.length) % sites.length];
 
-    const sharkGif = "https://sharkcore-webring.netlify.app/shark.gif";
+    const sharkAnimation = "https://sharkcore-webring.netlify.app/shark.webm";
 
     return html`
       <table border="1">
         <tr>
           <td>
-            <img alt="dancing left shark" src="${sharkGif}" />
+            <video alt="dancing left shark" disableRemotePlayback autoplay loop muted>
+                <source src="${sharkAnimation}" type="video/mp4">
+            </video>
           </td>
           <td>
             <b>OFFICIAL SITE</b>
@@ -70,7 +72,9 @@ class SharkcoreWebring extends LitElement {
             SHARKCORE Developers Web Ring
           </td>
           <td>
-            <img alt="dancing right shark" src="${sharkGif}" />
+            <video alt="dancing right shark" disableRemotePlayback autoplay loop muted>
+                <source src="${sharkAnimation}" type="video/mp4">
+            </video>
           </td>
         </tr>
         <tr>
