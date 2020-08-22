@@ -46,6 +46,12 @@ class SharkcoreWebring extends LitElement {
         width: 80px;
         height: 84.8px;
       }
+
+      @media screen and (max-width: 390px) {
+          .right-shark {
+              display: none;
+          }
+      }
     `;
   }
 
@@ -71,7 +77,7 @@ class SharkcoreWebring extends LitElement {
 
             SHARKCORE Developers Web Ring
           </td>
-          <td>
+          <td class="right-shark">
             <video alt="dancing right shark" disableRemotePlayback autoplay loop muted>
                 <source src="${sharkAnimation}" type="video/mp4">
             </video>
